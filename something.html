@@ -5,21 +5,6 @@
 </head>
 <body>
     <h1>Hello, this is an HTML page with PHP!</h1>
-
-    <?php
-        // Check the user agent to determine the source
-        $user_agent = $_SERVER['HTTP_USER_AGENT'];
-
-        if (stripos($user_agent, 'Discord') !== false) {
-        // If the user agent contains "Discord," redirect to an image
-        header('Location: https://discord.com/your-image-url.jpg');
-        exit;
-        } else {
-        // If the user agent does not contain "Discord" (likely a web browser), redirect to YouTube
-        header('Location: https://www.youtube.com');
-        exit;
-        }
-    ?>
     <p>This is regular HTML content.</p>
 </body>
 </html>
